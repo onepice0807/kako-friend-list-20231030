@@ -6,7 +6,7 @@ const IconButton = ({ name, color }) => {
   return (
     <TouchableOpacity
       hitSlop={{ top: 10, bottom: 10 }} // 터치 판정영역을 padding 값보다 늘리거나 줄일 때 사용. padding 값은 적용되지 않음
-      style={{ paddingHorizontal: 6, backgroundColor: color }}
+      style={{ paddingHorizontal: 6 }}
       onPress={() => console.log(name)}
     >
       <Ionicons name={name} size={26} color="black" />
